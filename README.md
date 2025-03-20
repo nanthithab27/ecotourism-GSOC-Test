@@ -6,7 +6,9 @@ This project retrieves Platypus occurrence data from the Global Biodiversity Inf
 ## 👤 Author: Nanthitha Balamurugan
 
 ## 📂 Project Structure
-1) platypus_data.R - The main script that retrieves data and plots it on a map.
+
+<img width="350" alt="Screenshot 2025-03-20 170949" src="https://github.com/user-attachments/assets/5497ab05-af6d-4f66-a8bb-36d72c4c64aa" />
+
 
 ## 🔧 Requirements
 Before running the script, ensure you have installed the following R packages:
