@@ -1,53 +1,76 @@
-# 📌  Platypus Occurrence Data Visualization
+# 📌 README - Ecotourism Data Package
 
 ## 🚀 Project Overview
-This project retrieves Platypus occurrence data from the Global Biodiversity Information Facility (GBIF) and visualizes it on a map of Australia. The data consists of platypus sightings, including their latitude and longitude, which are then plotted using ggplot2 and sf libraries in R.
+
+The Ecotourism Data Package provides tourism records and endangered wildlife reports, making it a valuable resource for teaching data visualization, temporal data analysis, and mapping techniques. This package helps researchers, educators, and students explore tourism data linked to wildlife sightings.
 
 ## 👤 Author: Nanthitha Balamurugan
 
 ## 📂 Project Structure
 
-<img width="350" alt="Screenshot 2025-03-20 170949" src="https://github.com/user-attachments/assets/5497ab05-af6d-4f66-a8bb-36d72c4c64aa" />
+<img width="350" alt="Screenshot 2025-03-20 170949" src="https://github.com/user-attachments/assets/8ff98243-25e9-491d-a430-cbdb025a5446" />
 
 
-## 🔧 Requirements
-Before running the script, ensure you have installed the following R packages:
+## 📊 Project Tasks & Implementation
 
-### 📊 Step-by-Step Guide
-## 1️⃣ Download Platypus Occurrence Data 🦆
-We use the rgbif package to retrieve occurrence data of the Platypus (Ornithorhynchus anatinus) in Australia:
+The project involves the following key steps:
 
-### ✅ What happens here?
+### 1️⃣ Easy Task: Platypus Occurrence Data 🦆
 
-The occ_data() function fetches 1000 records of Platypus sightings in Australia.
+Objective: Download occurrence data for the Platypus in Australia (2024) and visualize it on a map.
 
-The data includes coordinates (latitude & longitude) of sightings.
+Implementation:
 
-## 2️⃣ Plot Platypus Sightings on a Map 📍
-Using ggplot2 and sf, we visualize the locations of platypus sightings on an Australia map.
+Used the rgbif package to retrieve occurrence data.
 
-### ✅ What happens here?
+Mapped platypus sightings using ggplot2 and sf.
 
-The rnaturalearth package provides a map of Australia.
+Output Image: 
 
-sf (Simple Features) converts the platypus sighting coordinates into spatial points.
+<img width="431" alt="Rplot-easy" src="https://github.com/user-attachments/assets/74726e78-0d17-4307-b4f8-38af6b15a9ea" />
 
-ggplot2 plots the sightings on the map.
 
-## 🎯 Expected Output
-A beautiful map of Australia 🗺️ with blue dots representing Platypus sightings.
+### 2️⃣ Medium Task: Weather Data for Victoria 🌦️
 
-The map is minimalistic & clear, making it easy to analyze distribution patterns.
+Objective: Use the GSODR package to download one year of daily weather data (temperature & precipitation) for a station near large platypus populations.
 
-## 💡 Future Improvements
-Add interactive visualization with leaflet for better exploration.
+Implementation:
 
-Include time-based analysis to show trends over different years.
+Extracted climate data from ISD history.
 
-Integrate other species data for biodiversity studies.
+Processed and cleaned temperature and precipitation data.
 
-## 🏁 Conclusion
-This project demonstrates how to retrieve and visualize species occurrence data using R. With minor modifications, this can be extended to any other species or region. 🦘🌏
+Created a plot showing temperature trends over time.
 
-## 📌 For questions or improvements, feel free to contribute! 🚀
+Output Image: 
+
+<img width="431" alt="Rplot-medium" src="https://github.com/user-attachments/assets/af2dd023-be7c-481f-a943-03adc25007c7" />
+
+
+### 3️⃣ Hard Task: Geocoding Tourism Locations 📌
+
+Objective: Extract tourism stopover locations from domestic_trips_2023-10-08.csv, then geocode them with latitude & longitude.
+
+Implementation:
+
+Extracted unique location names from the dataset.
+
+Used tidygeocoder to fetch latitude & longitude.
+
+Merged geocoded data back into the dataset.
+
+Output Image: 
+
+<img width="871" alt="task3" src="https://github.com/user-attachments/assets/06e7fec5-c891-4725-839f-79ea43f9cbb1" />
+
+
+## 🎯 Expected Impact
+
+This data package aims to make a significant impact by:
+
+Enhancing data-driven teaching & learning in classrooms 📚.
+
+Supporting biodiversity & tourism research 🏞️.
+
+Providing open-source datasets for scientific publications 📖.
 
